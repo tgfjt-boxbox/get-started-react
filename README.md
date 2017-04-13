@@ -1,9 +1,9 @@
 なんかよくわからないから触ってみようぜReact
 =========================
 
-`style.css` が CSS で、
-`client.js` が React で書いてある JS です。
-`index.html` は、いろいろ React用のJSとか呼んでます。まぁ触らないです。
+`style.css` が CSS で、  
+`client.js` が React で書いてある JS です。  
+`index.html` は、いろいろ React用のJSとか呼んでます。まぁ触らないです。  
 
 Component
 ------------
@@ -23,12 +23,12 @@ class MyComponent extends React.Component {
 }
 ```
 
-`render()` が描画してくれ！っていう関数です。
-初期ロード時とか、`state` に変更がある度に、こいつが呼ばれると思っておｋです。
+`render()` が描画してくれ！っていう関数です。  
+初期ロード時とか、`state` に変更がある度に、こいつが呼ばれると思っておｋです。  
 
-`state` はこんなかんじで使います。
-`まじで？` ボタンを押すと、`state.isWondering` がTrueになったりFalseになったりして、
-`state.isWondering` がかわると、`render()` が呼ばれるので、`message` が変更になります。
+`state` はこんなかんじで使います。  
+`まじで？` ボタンを押すと、`state.isWondering` がTrueになったりFalseになったりして、  
+`state.isWondering` がかわると、`render()` が呼ばれるので、`message` が変更になります。  
 
 
 ```js
@@ -59,7 +59,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-このように、View となる Component を作っていき、
+このように、View となる Component を作っていき、  
 状態を持つ Component の場合には、`state` によって変更されるように作ります。
-（`is-error`とかね）
+（`is-error`とかね）  
 複雑なものは、いくつかの Component を組み合わせたものになるでしょう。
